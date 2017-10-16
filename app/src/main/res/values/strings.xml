@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PayTMProject</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">FAUGV5aVOSptb3GZTXmrSieMZ</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">HyiY4o4nCTY2GZQFm8rP0FZbyZ4C0pjUV75eSwwkfF5M2SIIHH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_keyword_to_be_analysed">Enter Keyword to be analysed</string>
+    <string name="add">Add</string>
+    <string name="ok">OK</string>
+    <string name="add_detail_text_dialog">Thanks for adding a new entity. It might take about 30 minutes to do the complete analysis. However, you may check the interim results, as and when they are ready</string>
+    <string name="info_activity_title">Information</string>
+    <string name="info_how">We studied over thousands of Tweets related to the mentioned topic spread across the country. Used Machine Learning to analyse the sentiment of the Tweet and calculate a final score</string>
+    <string name="radius">Radius - </string>
+    <string name="radius_description">Directly proportional to the number of Tweets</string>
+    <string name="red_color">Red Color - </string>
+    <string name="red_description">People are tweeting negative things about the topic</string>
+    <string name="green_color">Green Color - </string>
+    <string name="green_description">People are tweeting positive things about the topic</string>
+    <string name="black_description">Mixed opinions. A large black circle means that area is comprised of both positive and negative people.</string>
+    <string name="black_color">Black Color - </string>
+    <string name="info">Info</string>
+</resources>
