@@ -3,7 +3,7 @@
 **Aim**
 Aim is to find out the distribution of emotions over a particular topic across various parts of the country. For example, we need to find out reaction of people on **GST** across country. We can simply analyse what sort of Tweets people are making from different parts of the country. This would give us some understanding of the acceptance level of GST.
 
-You can use this app to get info about anything, be it a Movie review, 
+You can use this app to get info about anything, be it a Movie review, Government Policy, Company etc.
 
 **Process**
 * I have used Twitter API to go through thousands of tweets made recently about a particular topic. 
