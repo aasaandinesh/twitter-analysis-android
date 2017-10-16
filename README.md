@@ -67,7 +67,7 @@ List of available keywords to be analysed. If you want, you can add a new keywor
 ![Twitter List Screen](https://ibb.co/iK1krR)
 
 **Analysis Results**
-![Analysis Results](https://ibb.co/hbsrWR)
+![Analysis Results on Map](https://ibb.co/hbsrWR)
 
 Looks like SwachhBharat is still popular in Northen side of India
 
