@@ -13,7 +13,7 @@ You can use this app to get info about anything, be it a Movie review,
 **Main Technologies used**
 
 * [Google NLP API](https://cloud.google.com/natural-language/)
-* [Twitter Search API](https://developer.twitter.com/en/docs/tweets/search/overview/basic-search)
+* [Twitter Search API](https://developer.twitter.com/en/docs/tweets/search/overview/basic-search) Consumed from the Django App
 * [Django](https://www.djangoproject.com/) For developing the entire Backend
 
 In this repository, I will talk about the Architecture of this Android app. The Django part is present at this [link](https://github.com/aasaandinesh/twitter-analysis)
