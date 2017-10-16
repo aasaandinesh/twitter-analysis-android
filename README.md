@@ -33,7 +33,7 @@ Data Source abstract away the complications of fetching data from different reso
 This gives rise to the talk of the town architecture - **Offline First**
 ![Android Architecture](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
-[Ref](https://developer.android.com/)
+Ref:[https://developer.android.com/](https://developer.android.com/)
 
 I have tweaked the above architecture a bit. Instead of confusing the repository layer I have asked it to take data only and only from DB and return it straighaway. After which, make a call to API, update the DB and then inform the UI.
 
@@ -64,10 +64,10 @@ Some Screenshots of the app
 List of available keywords to be analysed. If you want, you can add a new keyword by using FAB, however, it would take huge amount of time to do so.
 
 **List of Available Keywords Screen**
-![Twitter List Screen](https://ibb.co/iK1krR)
+[Twitter List Screen](https://ibb.co/iK1krR)
 
 **Analysis Results**
-![Analysis Results on Map](https://ibb.co/hbsrWR)
+[Analysis Results on Map](https://ibb.co/hbsrWR)
 
 Looks like SwachhBharat is still popular in Northen side of India
 
