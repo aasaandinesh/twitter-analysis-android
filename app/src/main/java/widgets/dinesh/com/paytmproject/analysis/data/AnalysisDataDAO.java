@@ -17,5 +17,5 @@ public interface AnalysisDataDAO {
     Flowable<List<SentimentalAnalysisData>> getAll(String keyword);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(List<SentimentalAnalysisData> sentimentalAnalysisData);
+    List<Long> insertAll(List<SentimentalAnalysisData> sentimentalAnalysisData);
 }

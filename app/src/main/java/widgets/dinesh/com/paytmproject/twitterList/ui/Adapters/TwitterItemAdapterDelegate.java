@@ -1,4 +1,4 @@
-package widgets.dinesh.com.paytmproject.twitterList.ui;
+package widgets.dinesh.com.paytmproject.twitterList.ui.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,6 +9,7 @@ import java.util.List;
 
 import widgets.dinesh.com.paytmproject.R;
 import widgets.dinesh.com.paytmproject.base.widgets.AbstractAdapterDelegate;
+import widgets.dinesh.com.paytmproject.twitterList.ui.viewholders.TwitterEntityViewholder;
 import widgets.dinesh.com.paytmproject.viewModels.TwitterEntity;
 
 class TwitterItemAdapterDelegate extends AbstractAdapterDelegate<List<TwitterEntity>> {

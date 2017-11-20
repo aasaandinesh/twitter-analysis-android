@@ -1,9 +1,10 @@
-package widgets.dinesh.com.paytmproject;
+package widgets.dinesh.com.paytmproject.twitterList.ui.fragments;
 
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import widgets.dinesh.com.paytmproject.R;
 import widgets.dinesh.com.paytmproject.base.BaseFragment;
 
 

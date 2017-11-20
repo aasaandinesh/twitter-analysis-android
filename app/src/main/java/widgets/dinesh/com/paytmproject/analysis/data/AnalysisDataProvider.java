@@ -1,13 +1,10 @@
 package widgets.dinesh.com.paytmproject.analysis.data;
 
-import android.util.Log;
-
 import java.util.List;
 
 import javax.inject.Inject;
 
 import io.reactivex.Flowable;
-import io.reactivex.Observable;
 import widgets.dinesh.com.paytmproject.APIService;
 import widgets.dinesh.com.paytmproject.analysis.viewModels.SentimentalAnalysisData;
 import widgets.dinesh.com.paytmproject.base.data.BaseDataProvider;
@@ -33,15 +30,13 @@ public class AnalysisDataProvider extends BaseDataProvider implements AnalysisDa
         apiService.getSentimentalAnalysisData(keyword)
                 .subscribeOn(executionThread.getScheduler())
                 .observeOn(postExecutionThread.getScheduler())
-                .subscribe(sentimentalAnalysisData -> Observable.fromCallable(() -> {
-                    analysisDataDAO.insertAll(sentimentalAnalysisData);
-                    return sentimentalAnalysisData;
-                }).subscribeOn(executionThread.getScheduler())
-                        .observeOn(postExecutionThread.getScheduler())
-                        .subscribe()
-                ,error->{
-                            Log.e("API Error", "Something went wrong");
-                        });
+                .flatMap(sentimentalAnalysisData -> {
+    return Flowable.fromCallable(() -> analysisDataDAO.insertAll(sentimentalAnalysisData))
+            .subscribeOn(executionThread.getScheduler())
+            .observeOn(postExecutionThread.getScheduler());
+
+                })
+                .subscribe();
         return analysisDataDAO.getAll(keyword);
 
     }

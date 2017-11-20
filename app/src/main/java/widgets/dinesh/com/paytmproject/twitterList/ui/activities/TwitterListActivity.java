@@ -1,7 +1,8 @@
-package widgets.dinesh.com.paytmproject;
+package widgets.dinesh.com.paytmproject.twitterList.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -15,20 +16,23 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import widgets.dinesh.com.paytmproject.addEntity.ui.AddTwitterEntityActivity;
+import widgets.dinesh.com.paytmproject.PaytmApplication;
+import widgets.dinesh.com.paytmproject.R;
+import widgets.dinesh.com.paytmproject.addEntity.ui.activities.AddTwitterEntityActivity;
 import widgets.dinesh.com.paytmproject.analysis.ui.MainActivity;
 import widgets.dinesh.com.paytmproject.base.BaseActivity;
 import widgets.dinesh.com.paytmproject.base.di.RxModule;
-import widgets.dinesh.com.paytmproject.di.DaggerTwitterListComponent;
-import widgets.dinesh.com.paytmproject.di.TwitterListModule;
 import widgets.dinesh.com.paytmproject.info.InfoActivity;
-import widgets.dinesh.com.paytmproject.twitterList.ui.TwitterListAdapter;
+import widgets.dinesh.com.paytmproject.twitterList.di.DaggerTwitterListComponent;
+import widgets.dinesh.com.paytmproject.twitterList.di.TwitterListModule;
+import widgets.dinesh.com.paytmproject.twitterList.ui.Adapters.TwitterListAdapter;
 import widgets.dinesh.com.paytmproject.viewModels.TwitterEntitiesViewModel;
 import widgets.dinesh.com.paytmproject.viewModels.TwitterEntity;
 
 public class TwitterListActivity extends BaseActivity {
 
-
+    @BindView(R.id.swiperefresh)
+    SwipeRefreshLayout swipeRefreshLayout;
 
     @BindView(R.id.rv_twitter_list)
     RecyclerView rvTwitterList;
@@ -54,13 +58,29 @@ public class TwitterListActivity extends BaseActivity {
                 .build()
                 .inject(this);
                 setTitle("Keywords");
+                handleSwipeToRefresh();
+                fetchData();
+
+
+
+
+
+    }
+
+    private void fetchData() {
         twitterEntitiesViewModel.getTwitterLiveData()
+                .observe(this, twitterEntities -> {
+                    swipeRefreshLayout.setRefreshing(false);
+                    updateData(twitterEntities);
+                });
+    }
 
-                .observe(this, this::updateData)
-        ;
+    private void handleSwipeToRefresh() {
+        swipeRefreshLayout.setOnRefreshListener(this::refreshData);
+    }
 
-
-
+    private void refreshData() {
+        fetchData();
 
     }
 

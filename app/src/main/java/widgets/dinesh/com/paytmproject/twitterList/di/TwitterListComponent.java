@@ -1,7 +1,8 @@
-package widgets.dinesh.com.paytmproject.di;
+package widgets.dinesh.com.paytmproject.twitterList.di;
 
 import dagger.Component;
-import widgets.dinesh.com.paytmproject.TwitterListActivity;
+import widgets.dinesh.com.paytmproject.di.ApplicationComponent;
+import widgets.dinesh.com.paytmproject.twitterList.ui.activities.TwitterListActivity;
 import widgets.dinesh.com.paytmproject.base.di.RxModule;
 import widgets.dinesh.com.paytmproject.base.di.ScopedActivity;
 

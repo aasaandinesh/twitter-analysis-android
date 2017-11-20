@@ -1,4 +1,4 @@
-package widgets.dinesh.com.paytmproject.twitterList.ui;
+package widgets.dinesh.com.paytmproject.twitterList.ui.viewholders;
 
 import android.content.Context;
 import android.view.View;

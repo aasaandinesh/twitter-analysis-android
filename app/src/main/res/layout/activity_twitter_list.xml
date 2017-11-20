@@ -9,12 +9,18 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
 
-        tools:context="widgets.dinesh.com.paytmproject.TwitterListActivity"
+        tools:context="widgets.dinesh.com.paytmproject.twitterList.ui.activities.TwitterListActivity"
         >
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_twitter_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_add_entity"

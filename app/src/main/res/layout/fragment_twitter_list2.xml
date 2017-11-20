@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="widgets.dinesh.com.paytmproject.TwitterListFragment">
+    tools:context="widgets.dinesh.com.paytmproject.twitterList.ui.fragments.TwitterListFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

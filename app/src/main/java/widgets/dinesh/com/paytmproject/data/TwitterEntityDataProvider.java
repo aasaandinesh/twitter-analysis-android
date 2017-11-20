@@ -52,9 +52,7 @@ public class TwitterEntityDataProvider extends BaseDataProvider implements Twitt
                     .subscribeOn(executionThread.getScheduler())
                     .observeOn(postExecutionThread.getScheduler())
                     .subscribe();
-                }, error ->{
-                    Log.e("API Error", "Something went wrong");
-                });
+                }, error -> Log.e("API Error", "Something went wrong"));
         return twitterEntityDAO.getAll();
 
     }

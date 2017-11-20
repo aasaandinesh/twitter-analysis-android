@@ -1,4 +1,4 @@
-package widgets.dinesh.com.paytmproject.addEntity.ui;
+package widgets.dinesh.com.paytmproject.addEntity.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +18,7 @@ import widgets.dinesh.com.paytmproject.PaytmApplication;
 import widgets.dinesh.com.paytmproject.R;
 import widgets.dinesh.com.paytmproject.addEntity.di.AddEntityModule;
 import widgets.dinesh.com.paytmproject.addEntity.di.DaggerAddEntityComponent;
+import widgets.dinesh.com.paytmproject.addEntity.ui.dialogues.EntityAddedDialog;
 import widgets.dinesh.com.paytmproject.base.BaseActivity;
 import widgets.dinesh.com.paytmproject.base.di.RxModule;
 import widgets.dinesh.com.paytmproject.base.widgets.RxDialogFragment;

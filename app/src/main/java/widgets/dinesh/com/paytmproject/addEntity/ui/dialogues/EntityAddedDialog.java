@@ -1,4 +1,4 @@
-package widgets.dinesh.com.paytmproject.addEntity.ui;
+package widgets.dinesh.com.paytmproject.addEntity.ui.dialogues;
 
 import butterknife.OnClick;
 import widgets.dinesh.com.paytmproject.R;

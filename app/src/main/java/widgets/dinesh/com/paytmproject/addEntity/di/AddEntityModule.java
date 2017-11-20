@@ -4,7 +4,7 @@ import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;
 import widgets.dinesh.com.paytmproject.APIService;
-import widgets.dinesh.com.paytmproject.addEntity.ui.AddTwitterEntityActivity;
+import widgets.dinesh.com.paytmproject.addEntity.ui.activities.AddTwitterEntityActivity;
 import widgets.dinesh.com.paytmproject.base.data.ExecutionThread;
 import widgets.dinesh.com.paytmproject.base.data.PostExecutionThread;
 import widgets.dinesh.com.paytmproject.data.TwitterEntityDataProvider;

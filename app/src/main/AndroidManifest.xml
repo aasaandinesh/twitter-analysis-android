@@ -18,7 +18,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBCZ6dajTaH1qGWIb7AdphCfC2LNlDvihY" />
 
-        <activity android:name=".TwitterListActivity">
+        <activity android:name=".twitterList.ui.activities.TwitterListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".addEntity.ui.AddTwitterEntityActivity"/>
+        <activity android:name=".addEntity.ui.activities.AddTwitterEntityActivity"/>
         <activity android:name=".info.InfoActivity"
             android:theme="@style/NoActionBarTheme"/>
     </application>

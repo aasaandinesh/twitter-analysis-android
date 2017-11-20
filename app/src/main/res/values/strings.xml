@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PayTMProject</string>
+    <string name="app_name">Twitter Analysis</string>
     <string name="com.twitter.sdk.android.CONSUMER_KEY">FAUGV5aVOSptb3GZTXmrSieMZ</string>
     <string name="com.twitter.sdk.android.CONSUMER_SECRET">HyiY4o4nCTY2GZQFm8rP0FZbyZ4C0pjUV75eSwwkfF5M2SIIHH</string>
 

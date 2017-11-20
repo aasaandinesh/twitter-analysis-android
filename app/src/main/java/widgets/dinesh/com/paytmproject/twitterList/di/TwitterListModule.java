@@ -1,10 +1,10 @@
-package widgets.dinesh.com.paytmproject.di;
+package widgets.dinesh.com.paytmproject.twitterList.di;
 
 import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;
 import widgets.dinesh.com.paytmproject.APIService;
-import widgets.dinesh.com.paytmproject.TwitterListActivity;
+import widgets.dinesh.com.paytmproject.twitterList.ui.activities.TwitterListActivity;
 import widgets.dinesh.com.paytmproject.base.data.ExecutionThread;
 import widgets.dinesh.com.paytmproject.base.data.PostExecutionThread;
 import widgets.dinesh.com.paytmproject.data.TwitterEntityDataProvider;

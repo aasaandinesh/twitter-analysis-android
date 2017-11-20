@@ -1,4 +1,4 @@
-package widgets.dinesh.com.paytmproject.twitterList.ui;
+package widgets.dinesh.com.paytmproject.twitterList.ui.Adapters;
 
 import android.content.Context;
 
